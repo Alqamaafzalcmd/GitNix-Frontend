@@ -7,13 +7,11 @@ import Dashboard from "./components/dashboard/Dashboard"
 import Profile from "./components/user/Profile"
 import Login from "./components/auth/Login"
 import Signup from "./components/auth/Signup"
+import {useAuth} from "./authContext"
 
-
-
-import {useAuth} from "./authContext";
 
 const ProjectRoutes = () => {
-    const [currUser, setCurrentUser] = useAuth();
+    const { currentUser: currUser, setCurrentUser } = useAuth();
     const navigate = useNavigate();
 
 
@@ -38,7 +36,7 @@ const ProjectRoutes = () => {
       { path: "/", element: <Dashboard /> },
       { path: "/auth", element: <Login /> },
       { path: "/signup", element: <Signup /> },
-      { path: "pfofile", element: <Profile /> },
+      { path: "/profile", element: <Profile /> },
     ]);
 
     return element;

@@ -1,0 +1,64 @@
+
+.signup-main,.login-main{
+    height:100vh;
+}
+.gitnix-logo {
+  height: 30px;
+  width: 30px;
+  margin-left:5px;
+  margin-right:5px;
+ 
+}
+
+.intro-block p{
+    width: 70%;
+}
+
+.tick{
+    width:20px;
+    height:20px;
+}
+
+
+
+.signupcard {
+  background-color: #151522;
+  border: 1px solid #29293a;
+  border-radius: 20px;
+  box-shadow:1px 10px 20px rgba(78, 37, 132, 0.55);
+   padding:20px;
+    /* width:90%; */
+}
+
+.signupcard input{
+    background-color: rgb(28, 18, 40);
+    color:rgb(162, 156, 156);
+}
+
+.small-text {
+  font-size: 12px;
+}
+
+
+.custom-input:focus {
+  background-color: #151522;
+  color: white;
+  border-color: #9367f5;
+  box-shadow: none;
+}
+
+
+
+.google {
+  background-color:#231b35;
+  border: 1px solid #303044;
+  color: white;
+}
+
+.google:hover,
+.google:focus,
+.google:active {
+  background-color: #362b50 !important;
+  border-color: #362b50 !important;
+  color: white !important;
+}
