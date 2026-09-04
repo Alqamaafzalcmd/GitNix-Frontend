@@ -1,0 +1,10 @@
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden !important;
+}
+
+.dashboard {
+    flex: 1;
+     overflow: hidden !important;
+}

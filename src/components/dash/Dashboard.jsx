@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Navbar from "../Navbar";
+import {Routes, Route} from 'react-router-dom'
+import SideBar from "../SideBar";
+import './Dashboard.css'
 
 const Dashboard = () => {
   const [repos, setRepos] = useState([]);
@@ -51,10 +54,12 @@ const Dashboard = () => {
   }, [searchQuery, repos]);
 
   return (
-    <div>
-      <Navbar/>
+    <div className="dashboard-container">
+      <SideBar />
+      <div className="dashboard"></div>
+      <h3 className="text-white mt-5 pt-5">Dashboard</h3>
     </div>
-  )
+  );
 };
 
 export default Dashboard;

@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect, useContext } from "react";
+import React, { createContext, useState, useContext } from "react";
 
 const AuthContext = createContext();
 
@@ -7,16 +7,11 @@ export const useAuth = () => {
 };
 
 export const AuthProvider = ({ children }) => {
-  const [currentUser, setCurrentUser] = useState(null);
-
-  useEffect(() => {
-    const userId = localStorage.getItem("userId");
-    if (userId) {
-      () => {
-        setCurrentUser(userId);
-      };
-    }
-  }, []);
+  // Read the persisted session before the first route is rendered. This avoids
+  // briefly treating an already signed-in user as unauthenticated.
+  const [currentUser, setCurrentUser] = useState(() =>
+    localStorage.getItem("userId"),
+  );
 
   const value = { currentUser, setCurrentUser };
 

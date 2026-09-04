@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css"
-import {Link} from "react-router-dom"
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -72,39 +72,39 @@ const Navbar = () => {
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-start flex-grow-1 pe-5">
                 <li class="nav-item  mb-2">
-                  <Link
-                    class="nav-link active side-options"
+                  <NavLink
+                    className="nav-link active side-options"
                     aria-current="page"
-                    to="#"
+                    to="/"
                   >
                     <i class="fa-solid fa-house text-secondary fs-6 me-2"></i>{" "}
                     Home
-                  </Link>
+                  </NavLink>
                 </li>
                 <li class="nav-item  mb-2">
-                  <Link class="nav-link side-options" to="#">
+                  <NavLink className="nav-link side-options" to="/issues">
                     <i className="fa-regular fa-circle-dot text-secondary fs-6 me-2"></i>{" "}
                     All Issues
-                  </Link>
+                  </NavLink>
                 </li>
                 <li class="nav-item mb-2">
-                  <Link class="nav-link side-options" to="#">
+                  <NavLink className="nav-link side-options" to="/pullRequests">
                     <i className="fa-solid fa-code-pull-request text-secondary fs-6 me-2"></i>{" "}
                     All Pull Requests
-                  </Link>
+                  </NavLink>
                 </li>
                 <li class="nav-item  mb-2">
-                  <Link class="nav-link side-options" to="#">
+                  <NavLink className="nav-link side-options" to="/repositories">
                     <i className="fa-regular fa-newspaper text-secondary fs-6 me-2"></i>
                     All Repositories
-                  </Link>
+                  </NavLink>
                 </li>
 
                 <li class="nav-item  mb-2">
-                  <Link class="nav-link side-options" to="#">
+                  <NavLink className="nav-link side-options" to="/explore">
                     <i class="fa-brands fa-wpexplorer text-secondary fs-6 me-2"></i>{" "}
                     Explore
-                  </Link>
+                  </NavLink>
                 </li>
               </ul>
               <form class="d-flex mt-3" role="search" data-bs-theme="dark">

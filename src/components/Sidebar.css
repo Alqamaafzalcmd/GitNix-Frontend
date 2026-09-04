@@ -1,0 +1,44 @@
+.sidebar-main{
+    margin-top:80px;
+    color:white;
+    padding:5px 10px 5px 10px;
+    margin-left:5px;
+    width:25%;
+    height:100vh;
+    background-color: rgb(10, 9, 11);
+     overflow-y: auto;
+}
+
+/* .sidebar {
+  width: 250px;
+  height: 100vh;
+  overflow-y: auto;
+  flex-shrink: 0;
+} */
+
+/* new button */
+.new-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 1px 8px;
+    background: #087f32;
+    border: 1px solid #00d639;
+    border-radius: 6px;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    height: 28px;
+}
+
+.new-btn i {
+    font-size: 13px;
+}
+
+ /* search input */
+ 
+ .search-repo-btn{
+    width:100% !important;
+    font-size:5px !important;
+ }

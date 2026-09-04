@@ -3,11 +3,12 @@ import {useNavigate, useRoutes} from 'react-router-dom'
 
 
 // pages list 
-import Dashboard from "./components/dashboard/Dashboard"
+// import Dashboard from "./components/dashboard/Dashboard"
 import Profile from "./components/user/Profile"
 import Login from "./components/auth/Login"
 import Signup from "./components/auth/Signup"
 import {useAuth} from "./authContext"
+import Home from "./components/Home";
 
 
 const ProjectRoutes = () => {
@@ -33,7 +34,7 @@ const ProjectRoutes = () => {
 
 
     let element = useRoutes([
-      { path: "/", element: <Dashboard /> },
+      { path: "/*", element: <Home /> },
       { path: "/auth", element: <Login /> },
       { path: "/signup", element: <Signup /> },
       { path: "/profile", element: <Profile /> },
