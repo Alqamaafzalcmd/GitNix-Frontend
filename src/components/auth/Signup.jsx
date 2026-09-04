@@ -5,6 +5,19 @@ import {useNavigate, Link} from 'react-router-dom';
 import axios from "axios";
 import {useAuth} from "../../authContext";
 
+import { toast, Bounce } from "react-toastify";
+const toastConfig = {
+  position: "top-center",
+  autoClose: 500,
+  hideProgressBar: false,
+  closeOnClick: true,
+  pauseOnHover: true,
+  draggable: true,
+  progress: undefined,
+  theme: "light",
+  transition: Bounce,
+};
+
 const Signup = () => {
 
   const navigate = useNavigate();
@@ -30,7 +43,7 @@ const Signup = () => {
 
     let handleSubmit = async (event) => {
       event.preventDefault();
-      
+      setLoading(true);
       try{
         let res = await axios.post("http://localhost:8082/user/signup",{
           email:data.email,
@@ -45,12 +58,21 @@ const Signup = () => {
         setLoading(false);
 
          navigate("/");
+          toast.success(`Welocome ${data.username} to GitNix`, toastConfig);
       }
       catch(err){
         console.error("Error while signup",err.message);
-        alert("signup failed !!");
+        // alert("signup failed !!");
         setLoading(false);
+         toast.error(`Signup Falied!!`, toastConfig);
       }
+
+
+       setData({
+         username: "",
+         email: "",
+         password: "",
+       });
 
 
     }

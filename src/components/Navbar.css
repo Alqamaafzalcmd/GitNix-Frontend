@@ -1,0 +1,46 @@
+.navbar-main{
+    border:0;
+    margin:0;
+}
+
+
+.custom-width{
+    width:28% !important;
+}
+
+
+.logo-height{
+    width:30px;
+    height:30px;
+}
+
+.search-btn:focus{
+   /* 2px right, 4px down, 8px blur */
+   box-shadow: none !important;
+   box-shadow: 2px 2px 2px rgba(112, 82, 129, 0.2) !important;
+   border: 1px solid rgba(100, 33, 137, 0.2) !important;
+}
+
+.options{
+   border:1px solid rgb(97, 94, 94) !important;
+   padding:5px;
+   border-radius: 5px;
+}
+
+
+.options:hover {
+    background-color: rgb(18, 17, 17);
+}
+
+.side-options {
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+.side-options:hover {
+    background-color: #0f0f0fda;
+}
+
+
