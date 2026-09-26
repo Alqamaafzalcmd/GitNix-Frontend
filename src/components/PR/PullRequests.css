@@ -1,0 +1,126 @@
+.pull-requests-page {
+    height: 100vh;
+    margin-left: 280px;
+    padding: 108px 20px 50px 20px;
+    overflow-y: auto;
+    background: #0c0d18
+}
+
+.pull-requests-heading {
+    margin-bottom: 36px
+}
+
+.pull-requests-heading h1 {
+    margin: 0;
+    color: #f5f4fb;
+    font-size: 32px
+}
+
+.pull-requests-heading p {
+    margin: 10px 0 0;
+    color: #a4a5b8;
+    font-size: 15px
+}
+
+.pull-request-list {
+    display: grid;
+    gap: 18px
+}
+
+.pull-request-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    border: 1px solid #303148;
+    border-radius: 28px;
+    background: #151623
+}
+
+.pull-request-card.needs-review {
+    border-color: #9167f5
+}
+
+.pull-request-icon {
+    color: #48de87;
+    font-size: 15px;
+}
+
+.pull-request-icon.merged {
+    color: #9872f6;
+    font-size:15px;
+}
+
+.pull-request-content {
+    flex: 1;
+    min-width: 0
+}
+
+.pull-request-content h2 {
+    margin: 0;
+    color: #eeedf6;
+    font-size: 18px;
+    font-weight: 600
+}
+
+.pull-request-content p {
+    margin: 7px 0 0;
+    color: #9799ae;
+    font-size: 14px
+}
+
+.pull-request-changes {
+    display: flex;
+    gap: 12px;
+    color: #a8a9ba;
+    font-size: 14px
+}
+
+.pull-request-changes span:first-child {
+    color: #aeb0c0
+}
+
+@media(max-width:991px) {
+    .pull-requests-page {
+        margin-left: 0;
+        padding: 90px 25px 45px
+    }
+}
+
+@media(max-width:650px) {
+    .pull-requests-page {
+        padding: 84px 18px 35px
+    }
+
+    .pull-requests-heading {
+        margin-bottom: 25px
+    }
+
+    .pull-requests-heading h1 {
+        font-size: 27px
+    }
+
+    .pull-request-card {
+        align-items: flex-start;
+        gap: 13px;
+        padding: 21px 17px
+    }
+
+    .pull-request-icon {
+        font-size: 22px
+    }
+
+    .pull-request-content h2 {
+        font-size: 15px
+    }
+
+    .pull-request-content p {
+        font-size: 12px
+    }
+
+    .pull-request-changes {
+        flex-direction: column;
+        gap: 4px;
+        font-size: 12px
+    }
+}

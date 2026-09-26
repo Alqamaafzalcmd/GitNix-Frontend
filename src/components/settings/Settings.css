@@ -1,0 +1,145 @@
+.settings-page {
+    height: 100vh;
+    margin-left: 280px;
+    padding: 108px 20px 50px 20px;
+    overflow-y: auto;
+    background: #0c0d18
+}
+
+.settings-page>h1 {
+    margin: 0 0 38px;
+    color: #f5f4fb;
+    font-size: 32px
+}
+
+.settings-card {
+    margin-bottom: 35px;
+    padding: 38px 42px;
+    border: 1px solid #303148;
+    border-radius: 28px;
+    background: #151623
+}
+
+.settings-card h2 {
+    margin: 0 0 36px;
+    color: #f0eff8;
+    font-size: 25px
+}
+
+.settings-card label {
+    display: grid;
+    gap: 8px;
+    color: #ebeaf3;
+    font-size: 14px;
+    font-weight: 600
+}
+
+.settings-card input {
+    height: 66px;
+    padding: 0 17px;
+    border: 1px solid #303148;
+    border-radius: 22px;
+    outline: 0;
+    background: #171827;
+    color: #e9e8f0;
+    font-size: 15px
+}
+
+.save-button {
+    margin-top: 35px;
+    padding: 14px 29px;
+    border: 0;
+    border-radius: 18px;
+    background: #8b63f6;
+    color: #161522;
+    font-size: 14px;
+    font-weight: 700
+}
+
+.preference-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 27px
+}
+
+.preference-row h3 {
+    margin: 0;
+    color: #e9e8f1;
+    font-size: 16px
+}
+
+.preference-row p {
+    margin: 5px 0 0;
+    color: #9d9eb1;
+    font-size: 13px
+}
+
+.switch {
+    width: 65px;
+    height: 35px;
+    padding: 4px;
+    border: 0;
+    border-radius: 20px;
+    background: #2a2b40
+}
+
+.switch span {
+    display: block;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: #e7e7ee;
+    transition: .2s
+}
+
+.switch.on {
+    background: #8b63f6
+}
+
+.switch.on span {
+    transform: translateX(30px)
+}
+
+@media(max-width:991px) {
+    .settings-page {
+        margin-left: 0;
+        padding: 90px 25px 45px
+    }
+}
+
+@media(max-width:650px) {
+    .settings-page {
+        padding: 84px 18px 35px
+    }
+
+    .settings-card {
+        padding: 27px 23px;
+        border-radius: 22px
+    }
+
+    .settings-card h2 {
+        font-size: 21px
+    }
+
+    .settings-card input {
+        height: 52px;
+        border-radius: 15px
+    }
+
+    .preference-row {
+        gap: 16px
+    }
+
+    .preference-row h3 {
+        font-size: 14px
+    }
+
+    .preference-row p {
+        font-size: 12px
+    }
+
+    .switch {
+        flex: none
+    }
+}

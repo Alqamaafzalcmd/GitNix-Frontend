@@ -1,5 +1,5 @@
 import React ,{useState} from "react";
-import "./Signup.css";
+import "./Auth.css";
 import {useNavigate, Link} from 'react-router-dom';
 
 import axios from "axios";
@@ -191,7 +191,7 @@ const Signup = () => {
 
             <p className="small-text text-center mb-0">
               Already have an account? &nbsp;
-              <Link to="/auth">Sign in</Link>
+              <Link to="/auth">Login in</Link>
             </p>
           </div>
         </div>

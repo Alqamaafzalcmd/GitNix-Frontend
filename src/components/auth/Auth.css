@@ -1,0 +1,235 @@
+.signup-main,
+.login-main {
+    min-height: 80vh;
+    width: 100%;
+    max-width: none !important;
+    margin: 0;
+    padding: 0;
+    color: #f4f3fc;
+    /* overflow-y:hidden; */
+    /* background: radial-gradient(circle at 15% 10%, rgba(111, 76, 200, .22), transparent 32%), radial-gradient(circle at 90% 75%, rgba(9, 176, 184, .12), transparent 28%), #0c0d18 */
+}
+
+.signup-main .row,
+.login-main .row {
+    min-height: 100vh;
+    margin: 0
+}
+
+.gitnix-logo {
+    width: 34px;
+    height: 34px;
+    margin: 0 8px 0 0
+}
+
+.intro-block {
+    max-width: 430px;
+    margin: auto
+}
+
+.intro-block>span {
+    font-size: 22px
+}
+
+.intro-block h2,
+.login-main h2 {
+    font-size: 31px;
+    font-weight: 700;
+    letter-spacing: -1px
+}
+
+.intro-block p,
+.login-main .text-center>p {
+    width: auto;
+    color: #aaaabd;
+    font-size: 15px;
+    line-height: 1.6
+}
+
+.intro-block li {
+    margin: 15px 0;
+    color: #c7c7d5;
+    font-size: 14px
+}
+
+.tick {
+    width: 18px;
+    height: 18px
+}
+
+.signupcard {
+    width: min(100%, 440px);
+    margin: 0 !important;
+    padding: 30px;
+    height: auto;
+    background: #151623;
+    border: 1px solid #303148;
+    border-radius: 20px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.25);
+}
+
+.login-main .signupcard {
+    margin-top: 25px
+}
+
+.signupcard .form-label {
+    color: #e4e3ed;
+    font-size: 13px;
+    font-weight: 600
+}
+
+.signupcard .custom-input {
+    height: 46px;
+    padding: 0 13px;
+    border: 1px solid #303148;
+    border-radius: 10px;
+    background: #171827;
+    color: #f2f1f9;
+    font-size: 14px
+}
+
+.signupcard .custom-input::placeholder {
+    color: #77798e
+}
+
+.custom-input:focus {
+    background: #171827;
+    color: #fff;
+    border-color: #926df4;
+    box-shadow: 0 0 0 3px rgba(146, 109, 244, .15)
+}
+
+.google {
+    height: 46px;
+    background: #1b1c2b;
+    border: 1px solid #35364d;
+    border-radius: 10px;
+    color: #f4f3fc;
+    font-size: 14px
+}
+
+.google:hover,
+.google:focus,
+.google:active {
+    background: #25263a !important;
+    border-color: #5e6078 !important;
+    color: white !important
+}
+
+.signupcard hr {
+    border-color: #38394e;
+    opacity: 1
+}
+
+.signupcard .btn-success {
+    height: 46px;
+    border: 0;
+    border-radius: 10px;
+    background: #8b63f6;
+    font-weight: 600
+}
+
+.signupcard .btn-success:hover,
+.signupcard .btn-success:focus {
+    background: #9b78fb
+}
+
+.small-text {
+    color: #9293a7;
+    font-size: 12px;
+    line-height: 1.5
+}
+
+.small-text a {
+    color: #a987ff;
+    text-decoration: none;
+    font-weight: 600
+}
+
+.small-text a:hover {
+    text-decoration: underline
+}
+
+.login-intro {
+    max-width: 465px;
+    margin: auto;
+}
+
+.brand-name {
+    font-size: 22px;
+}
+
+.login-intro h1 {
+    margin: 0;
+    color: #f7f6fd;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: -1.4px;
+}
+
+.login-intro h2 {
+    margin: 12px 0;
+    color: #af8fff;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.login-intro>p {
+    margin: 15px 0 28px;
+    color: #aaaabd;
+    font-size: 15px;
+}
+
+.login-benefits {
+    display: grid;
+    gap: 13px;
+    color: #d4d3e0;
+    font-size: 14px;
+}
+
+.login-benefits li::first-letter {
+    color: #67e49b;
+}
+
+.login-form-top h2{
+    color:#b196fa;
+} 
+
+@media(max-width:991px) {
+    .signup-main .intro-block {
+        margin: 50px auto 0
+    }
+
+    .signup-main .row>div:last-child {
+        padding: 25px 20px 50px !important
+    }
+
+    .login-main .row {
+        padding: 0 20px
+    }
+
+    .login-intro {
+        margin: 50px auto 35px;
+    }
+
+    .signupcard {
+        margin: 0 auto
+    }
+}
+
+@media(max-width:575px) {
+    .intro-block {
+        padding: 0 24px
+    }
+
+    .intro-block h2,
+    .login-main h2 {
+        font-size: 27px
+    }
+
+    .signupcard {
+        padding: 23px 20px;
+        border-radius: 16px
+    }
+}

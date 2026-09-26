@@ -1,10 +1,268 @@
-.dashboard-container {
-    display: flex;
-    justify-content: center;
-    overflow: hidden !important;
+.dashboard-layout {
+    height: 100vh;
+    margin-left: 280px;
+    padding-top: 76px;
+    background: #0c0d18
 }
 
-.dashboard {
-    flex: 1;
-     overflow: hidden !important;
+.dashboard-content-area {
+    height: 100%
+}
+
+.dashboard-main {
+    height: 100%;
+    overflow-y: auto;
+    min-width: 0;
+    padding: 36px 38px 55px;
+    background: #0c0d18
+}
+
+.welcome-card {
+    padding: 27px 36px;
+    border: 1px solid #303148;
+    border-radius: 24px;
+    background: linear-gradient(100deg, #191a2c, #141625)
+}
+
+.page-eyebrow {
+    margin: 0 0 9px;
+    color: #9672ef;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.3px
+}
+
+.welcome-card h1 {
+    margin: 0;
+    color: #f9f8ff;
+    font-size: clamp(26px, 2.5vw, 36px);
+    font-weight: 700;
+    letter-spacing: -1.3px
+}
+
+.welcome-card p:last-child {
+    margin: 9px 0 0;
+    color: #a4a5ba;
+    font-size: 14px
+}
+
+.stats-row {
+    margin-top: 32px
+}
+
+.stat-card {
+    min-height: 156px;
+    padding: 25px;
+    border: 1px solid #303148;
+    border-radius: 23px;
+    background: #151623
+}
+
+.stat-card>i {
+    color: #09d7d1;
+    font-size: 18px
+}
+
+.stat-card h2 {
+    margin: 22px 0 1px;
+    color: #f5f4fc;
+    font-size: 36px;
+    font-weight: 700
+}
+
+.stat-card p {
+    margin: 0;
+    color: #a3a4b7;
+    font-size: 14px
+}
+
+.repositories-section {
+    margin-top: 37px
+}
+
+.section-title {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 20px
+}
+
+.section-title h2 {
+    margin: 0;
+    color: #f5f4fb;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: -.7px
+}
+
+.section-title p {
+    margin: 5px 0 0;
+    color: #9697ae;
+    font-size: 13px
+}
+
+.view-all-button {
+    padding: 7px 0;
+    border: 0;
+    background: transparent;
+    color: #08d2d0;
+    font-size: 14px;
+    font-weight: 600
+}
+
+.view-all-button i {
+    margin-left: 5px;
+    font-size: 11px
+}
+
+.repository-card {
+    min-height: 177px;
+    padding: 24px;
+    border: 1px solid #303148;
+    border-radius: 23px;
+    background: #151623;
+    transition: transform .2s, border-color .2s
+}
+
+.repository-card:hover {
+    transform: translateY(-3px);
+    border-color: #7254bc
+}
+
+.repository-card-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px
+}
+
+.repository-card h3 {
+    margin: 0;
+    color: #f0eff8;
+    font-size: 16px;
+    font-weight: 700
+}
+
+.repository-card h3 i {
+    margin-right: 8px;
+    color: #9775f6;
+    font-size: 14px
+}
+
+.repository-card-header>span {
+    padding: 4px 10px;
+    height: fit-content;
+    border: 1px solid #37384e;
+    border-radius: 14px;
+    color: #a3a4b7;
+    font-size: 11px
+}
+
+.repository-description {
+    min-height: 40px;
+    margin: 15px 0 19px;
+    color: #a7a8bb;
+    font-size: 14px;
+    line-height: 1.4
+}
+
+.repository-card footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    color: #999aad;
+    font-size: 12px
+}
+
+.language-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    border-radius: 50%;
+    background: #0ed4d1
+}
+
+.star {
+    margin-left: 16px
+}
+
+.repository-card time {
+    white-space: nowrap
+}
+
+@media(max-width:991px) {
+    .dashboard-layout {
+        margin-left: 0;
+        padding-top: 64px
+    }
+
+    .dashboard-main {
+        padding: 28px 25px 45px
+    }
+}
+
+@media(max-width:768px) {
+    .dashboard-layout {
+        padding-top: 64px
+    }
+    .dashboard-main {
+        padding: 23px 18px 40px
+    }
+
+    .welcome-card {
+        padding: 24px 22px;
+        border-radius: 20px
+    }
+
+    .welcome-card p:last-child {
+        font-size: 13px
+    }
+
+    .stats-row {
+        margin-top: 25px
+    }
+
+    .stat-card {
+        min-height: 142px;
+        padding: 21px;
+        border-radius: 20px
+    }
+
+    .stat-card h2 {
+        margin-top: 18px;
+        font-size: 32px
+    }
+
+    .repositories-section {
+        margin-top: 30px
+    }
+
+    .section-title h2 {
+        font-size: 21px
+    }
+
+    .section-title p {
+        display: none
+    }
+
+    .repository-card {
+        min-height: 0;
+        padding: 21px;
+        border-radius: 20px
+    }
+
+    .repository-card h3 {
+        font-size: 15px
+    }
+
+    .repository-description {
+        min-height: 0;
+        font-size: 13px
+    }
+
+    .repository-card footer {
+        align-items: start;
+        flex-direction: column;
+        font-size: 12px
+    }
 }

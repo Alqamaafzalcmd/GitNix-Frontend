@@ -1,46 +1,158 @@
-.navbar-main{
-    border:0;
-    margin:0;
+.top-navbar {
+    margin-left: 280px;
+    width: calc(100% - 280px);
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 36px;
+    background: #11121f;
+    border-bottom: 1px solid #292a40;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
 }
 
-
-.custom-width{
-    width:28% !important;
+.search-box {
+    flex: 1;
+    min-width: 0;
+    max-width: 600px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 15px;
+    background: #171827;
+    border: 1px solid #303148;
+    border-radius: 22px;
+    color: #a7a8bd
 }
 
-
-.logo-height{
-    width:30px;
-    height:30px;
+.search-box input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #f5f3ff;
+    font-size: 14px
 }
 
-.search-btn:focus{
-   /* 2px right, 4px down, 8px blur */
-   box-shadow: none !important;
-   box-shadow: 2px 2px 2px rgba(112, 82, 129, 0.2) !important;
-   border: 1px solid rgba(100, 33, 137, 0.2) !important;
+.search-box input::placeholder {
+    color: #9698b2
 }
 
-.options{
-   border:1px solid rgb(97, 94, 94) !important;
-   padding:5px;
-   border-radius: 5px;
+.search-shortcut {
+    padding: 3px 8px;
+    border: 1px solid #393a55;
+    border-radius: 12px;
+    color: #a5a6bd;
+    font-size: 11px
 }
 
-
-.options:hover {
-    background-color: rgb(18, 17, 17);
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 15px
 }
 
-.side-options {
-    padding: 5px;
-    border-radius: 5px;
-    width: 100%;
+.notification-btn{
+   border:1.5px solid rgb(62, 61, 61) !important;
 }
 
-
-.side-options:hover {
-    background-color: #0f0f0fda;
+.new-repository-button {
+    border: 0;
+    border-radius: 14px;
+    width: 150px;
+    padding: 10px;
+    background: #8b63f6;
+    color: white;
+    font-size: 14px;
+    font-weight: 500
 }
 
+.new-repository-button i {
+    margin-right: 9px;
+}
 
+.new-repository-button:hover {
+    background: #9c78fb;
+}
+
+@media(max-width:991px) {
+    .top-navbar {
+        margin-left: 0;
+        width: 100%;
+        height: 64px;
+        padding: 0 20px
+    }
+
+    .search-box {
+        height: 40px;
+        max-width: none;
+    }
+
+    .search-box input {
+        font-size: 13px;
+    }
+
+    .notification-button {
+        width: 40px;
+        height: 40px;
+        font-size: 14px
+    }
+
+    .notification-button span {
+        top: 8px;
+        right: 8px;
+    }
+
+    .new-repository-button {
+        padding: 10px 13px;
+        width: auto;
+        font-size: 13px;
+    }
+
+
+    .new-repository-button i {
+        margin-right: 9px;
+    }
+}
+
+@media(max-width:600px){
+    .top-navbar {
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .search-shortcut {
+        display: none;
+    }
+
+    .navbar-actions {
+        gap: 8px;
+    }
+
+    .notification-btn {
+        width: 38px;
+        height: 38px;
+        padding: 0;
+    }
+
+    .new-repository-button span {
+        display: none;
+    }
+
+    .new-repository-button {
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        border-radius: 11px;
+    }
+
+    .new-repository-button i {
+        margin: 0;
+    }
+}

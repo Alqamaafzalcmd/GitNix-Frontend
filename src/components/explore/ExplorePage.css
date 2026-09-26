@@ -1,0 +1,113 @@
+.explore-page {
+    height: 100vh;
+    margin-left: 280px;
+    padding: 108px 38px 50px;
+    overflow-y: auto;
+    background: #0c0d18
+}
+
+.explore-heading {
+    margin-bottom: 58px
+}
+
+.explore-heading h1,
+.collections h2 {
+    margin: 0;
+    color: #f5f4fb;
+    font-size: 32px
+}
+
+.explore-heading p {
+    margin: 10px 0 0;
+    color: #a4a5b8;
+    font-size: 15px
+}
+
+.explore-project,
+.collection-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 18px;
+    min-height: 140px;
+    padding: 30px;
+    border: 1px solid #303148;
+    border-radius: 26px;
+    background: #151623
+}
+
+.explore-project h2,
+.collection-card h3 {
+    margin: 0;
+    color: #edecf5;
+    font-size: 18px
+}
+
+.explore-project p,
+.collection-card p {
+    margin: 18px 0 0;
+    color: #a4a5b8;
+    font-size: 14px
+}
+
+.explore-project>span {
+    color: #a9aabc;
+    font-size: 13px;
+    white-space: nowrap
+}
+
+.collections {
+    margin-top: 62px
+}
+
+.collections>h2 {
+    margin-bottom: 28px;
+    font-size: 27px
+}
+
+.collection-card {
+    display: block;
+    min-height: 128px;
+    padding: 27px
+}
+
+.collection-card p {
+    margin-top: 12px
+}
+
+@media(max-width:991px) {
+    .explore-page {
+        margin-left: 0;
+        padding: 90px 25px 45px
+    }
+}
+
+@media(max-width:650px) {
+    .explore-page {
+        padding: 84px 18px 35px
+    }
+
+    .explore-heading {
+        margin-bottom: 35px
+    }
+
+    .explore-heading h1 {
+        font-size: 27px
+    }
+
+    .explore-project {
+        min-height: 125px;
+        padding: 23px
+    }
+
+    .explore-project h2 {
+        font-size: 16px
+    }
+
+    .explore-project p {
+        font-size: 13px
+    }
+
+    .collections {
+        margin-top: 40px
+    }
+}

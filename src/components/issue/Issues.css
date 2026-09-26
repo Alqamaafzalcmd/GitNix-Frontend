@@ -1,0 +1,138 @@
+.issues-page {
+    height: 100vh;
+    margin-left: 280px;
+    padding: 100px 20px 50px 20px;
+    overflow-y: auto;
+    background: #0c0d18
+}
+
+.issues-heading {
+    margin-bottom: 36px
+}
+
+.issues-heading h1 {
+    margin: 0;
+    color: #f5f4fb;
+    font-size: 32px
+}
+
+.issues-heading p {
+    margin: 10px 0 0;
+    color: #a4a5b8;
+    font-size: 15px
+}
+
+.issues-list {
+    overflow: hidden;
+    border: 1px solid #303148;
+    border-radius: 26px;
+    background: #151623
+}
+
+.issue-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 31px;
+    border-bottom: 1px solid #2c2d40
+}
+
+.issue-row:last-child {
+    border-bottom: 0
+}
+
+.issue-status {
+    font-size: 15px
+}
+
+.issue-status.open {
+    color: #46df86
+}
+
+.issue-status.closed {
+    color: #9872f6
+}
+
+.issue-main-content {
+    flex: 1;
+    min-width: 0
+}
+
+.issue-main-content h2 {
+    margin: 0;
+    color: #edecf5;
+    font-size: 18px;
+    font-weight: 600
+}
+
+.issue-main-content p {
+    margin: 7px 0 0;
+    color: #9698ad;
+    font-size: 14px
+}
+
+.issue-label {
+    padding: 5px 12px;
+    border: 1px solid #36374b;
+    border-radius: 15px;
+    color: #a8a9ba;
+    font-size: 12px
+}
+
+.issue-comments {
+    min-width: 42px;
+    color: #a8a9ba;
+    font-size: 13px
+}
+
+.issue-comments i {
+    margin-right: 4px
+}
+
+@media(max-width:991px) {
+    .issues-page {
+        margin-left: 0;
+        padding: 90px 25px 45px
+    }
+}
+
+@media(max-width:650px) {
+    .issues-page {
+        padding: 84px 18px 35px
+    }
+
+    .issues-heading {
+        margin-bottom: 25px
+    }
+
+    .issues-heading h1 {
+        font-size: 27px
+    }
+
+    .issue-row {
+        align-items: flex-start;
+        gap: 13px;
+        padding: 21px 17px
+    }
+
+    .issue-status {
+        font-size: 22px
+    }
+
+    .issue-main-content h2 {
+        font-size: 15px
+    }
+
+    .issue-main-content p {
+        font-size: 12px
+    }
+
+    .issue-label {
+        display: none
+    }
+
+    .issue-comments {
+        min-width: auto;
+        font-size: 12px
+    }
+}

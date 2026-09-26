@@ -7,21 +7,25 @@ import Repositories from "./repo/Repositories.jsx"
 import ExplorePage from "./explore/ExplorePage.jsx"
 import PullRequests from "./PR/PullRequests.jsx"
 import Discussion from "./discussion/discusstionPage.jsx"
-import Navbar from "./Navbar.jsx";
+import Settings from "./settings/Settings.jsx";
+import SideBar from "./SideBar.jsx";
+import Navbar from "./Navbar.jsx"
 
 const Main = () => {
     return (
       <div className="main-container">
-        <Navbar />
-
+        <Navbar/>
+        <SideBar/>
         <div className="content ">
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/issues" element={<Issues />} />
             <Route path="/repositories" element={<Repositories />} />
+            <Route path="/repositories/:repoName" element={<Repositories />} />
             <Route path="/explore" element={<ExplorePage />} />
             <Route path="/discussion" element={<Discussion />} />
             <Route path="/pullRequests" element={<PullRequests />} />
+            <Route path="/settings" element={<Settings />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </div>
